@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+      body{
+        text-align: center ;
+      }
+    </style>
+    
+
+    <main class="content">
+      <h1>Evidencia de instalación</h1>
+      <h3>1-Creacion De Base datos</h3>
+      <img src="img/creando base datos.png" alt="">
+      <p>Para crear base dato debe usar este comando: <br>
+        <b>create database nombre; </b>
+      </p>
+      <h3>2-Mostrando Base datos Creada</h3>
+      <img src="img/Mostrando la base datos .png" alt="">
+       <p>para motras la base dato debe usar el siguente comando: <br> 
+        <b>show databases;</b>
+       </p>
+      <h3>3-creando la tabla de base datos usando primary key</h3>
+      <img src="img/creando la primera table .png" alt="">
+       <p>para crear una tabla usando primary key debe usar este comado: <br>
+        <b>create table name base datos(<br>
+            id int primary key,<br>
+            nombre varchar(255),<br>
+            edad int <br>
+            );
+            </b>
+       </p>
+      <h3>4-Creando otra tabla usando primary key Auto Incremento</h3>
+      <img src="img/creando tabla con auto incremento .png" alt="">
+      <p>para crear una tabla con auto incremento se debe usar este comando: 
+        <b>
+            create table name table( <br>
+            id int primary key auto_increment, <br>
+            nombre varchar(225),<br>
+            edad int <br>
+            ); </b>
+      </p>
+      <h3>5-creando tabla con llave foraneas</h3>  
+      <img src="img/crenado tabla llave foreana.png" alt="">
+      <p>ahora vamos hacer una conexion con llave foraneas aqui le dejo el comando : 
+                <b>create table name table(<br>
+                    id int primary key, <br>
+                    nombre varchar(255) <br>
+                    );</b>
+      </p>
+      <p>entonces para hacer la conexion con la llave foraneas padre el comando que debe ejecutar es: 
+        <b>CREATE TABLE name table ( <br>
+            id INT PRIMARY KEY, <br>
+            nombre VARCHAR(255), <br>
+            llaveforania INT, <br>
+            FOREIGN KEY (llaveforania) REFERENCES llaveforania(id) <br>
+            );
+        </b>
+
+      </p>
+      
+      <h3>6-Cconexion con llave foraneas</h3>
+      <img src="img/conexion con llave foranea .png" alt="">
+    </main>
+
+</body>
+</html>
